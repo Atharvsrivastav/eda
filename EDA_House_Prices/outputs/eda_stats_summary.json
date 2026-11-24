@@ -1,0 +1,156 @@
+{
+    "dataset_shape": [
+        1460,
+        81
+    ],
+    "total_rows": 1460,
+    "total_columns": 81,
+    "missing_columns_count": 19,
+    "top_missing_features": {
+        "PoolQC": {
+            "Missing_Count": 1453,
+            "Percentage": 99.52054794520548
+        },
+        "MiscFeature": {
+            "Missing_Count": 1406,
+            "Percentage": 96.30136986301369
+        },
+        "Alley": {
+            "Missing_Count": 1369,
+            "Percentage": 93.76712328767123
+        },
+        "Fence": {
+            "Missing_Count": 1179,
+            "Percentage": 80.75342465753424
+        },
+        "MasVnrType": {
+            "Missing_Count": 872,
+            "Percentage": 59.726027397260275
+        }
+    },
+    "descriptive_stats": {
+        "SalePrice": {
+            "Mean": 180921.19589041095,
+            "Median": 163000.0,
+            "Mode": 140000.0,
+            "Std": 79442.50288288662,
+            "Variance": 6311111264.297448,
+            "Min": 34900.0,
+            "Max": 755000.0,
+            "Range": 720100.0,
+            "Q1": 129975.0,
+            "Q3": 214000.0,
+            "IQR": 84025.0,
+            "Skewness": 1.8828757597682118,
+            "Kurtosis": 6.536281860064525,
+            "Skew_Direction": "Right-skewed (Mean > Median)"
+        },
+        "GrLivArea": {
+            "Mean": 1515.463698630137,
+            "Median": 1464.0,
+            "Mode": 864.0,
+            "Std": 525.4803834232025,
+            "Variance": 276129.63336259587,
+            "Min": 334.0,
+            "Max": 5642.0,
+            "Range": 5308.0,
+            "Q1": 1129.5,
+            "Q3": 1776.75,
+            "IQR": 647.25,
+            "Skewness": 1.3665603560164559,
+            "Kurtosis": 4.895120580693171,
+            "Skew_Direction": "Right-skewed (Mean > Median)"
+        },
+        "LotArea": {
+            "Mean": 10516.828082191782,
+            "Median": 9478.5,
+            "Mode": 7200.0,
+            "Std": 9981.26493237915,
+            "Variance": 99625649.65034176,
+            "Min": 1300.0,
+            "Max": 215245.0,
+            "Range": 213945.0,
+            "Q1": 7553.5,
+            "Q3": 11601.5,
+            "IQR": 4048.0,
+            "Skewness": 12.207687851233496,
+            "Kurtosis": 203.24327101886033,
+            "Skew_Direction": "Right-skewed (Mean > Median)"
+        }
+    },
+    "raw_skewness": 1.8828757597682118,
+    "log_skewness": 0.12134661989686531,
+    "top10_correlated_features": {
+        "SalePrice": 1.0,
+        "OverallQual": 0.7909816005838053,
+        "GrLivArea": 0.7086244776126515,
+        "GarageCars": 0.6404091972583519,
+        "GarageArea": 0.6234314389183622,
+        "TotalBsmtSF": 0.6135805515591943,
+        "1stFlrSF": 0.6058521846919153,
+        "FullBath": 0.5606637627484453,
+        "TotRmsAbvGrd": 0.5337231555820284,
+        "YearBuilt": 0.5228973328794967,
+        "YearRemodAdd": 0.5071009671113866
+    },
+    "top3_details": [
+        {
+            "Feature": "OverallQual",
+            "Pearson_Correlation": 0.7909816005838053,
+            "Covariance": 86904.12583679946,
+            "Std_Feature": 1.3829965467415934,
+            "Std_SalePrice": 79442.50288288662
+        },
+        {
+            "Feature": "GrLivArea",
+            "Pearson_Correlation": 0.7086244776126515,
+            "Covariance": 29581866.743236575,
+            "Std_Feature": 525.4803834232025,
+            "Std_SalePrice": 79442.50288288662
+        },
+        {
+            "Feature": "GarageCars",
+            "Pearson_Correlation": 0.6404091972583519,
+            "Covariance": 38020.18135897172,
+            "Std_Feature": 0.7473150101111095,
+            "Std_SalePrice": 79442.50288288662
+        }
+    ],
+    "outlier_results": {
+        "GrLivArea": {
+            "IQR_Lower": 158.625,
+            "IQR_Upper": 2747.625,
+            "IQR_Count": 31,
+            "Z_Threshold": 3.0,
+            "Z_Count": 16,
+            "Overlap_Count": 16,
+            "IQR_Only_Count": 15,
+            "Z_Only_Count": 0
+        },
+        "SalePrice": {
+            "IQR_Lower": 3937.5,
+            "IQR_Upper": 340037.5,
+            "IQR_Count": 61,
+            "Z_Threshold": 3.0,
+            "Z_Count": 22,
+            "Overlap_Count": 22,
+            "IQR_Only_Count": 39,
+            "Z_Only_Count": 0
+        }
+    },
+    "duplicates_count": 0,
+    "inconsistent_cat_count": 0,
+    "impossible_checks": {
+        "YearBuilt > YrSold": 0,
+        "Negative Area (GrLivArea < 0)": 0,
+        "Negative Area (TotalBsmtSF < 0)": 0,
+        "Negative Area (LotArea < 0)": 0,
+        "Negative SalePrice (SalePrice <= 0)": 0,
+        "YearRemodAdd < YearBuilt": 0
+    },
+    "remaining_missing_clean": 0,
+    "neighborhood_mode": "NAmes",
+    "neighborhood_count": 25,
+    "housestyle_mode": "1Story",
+    "housestyle_count": 8
+}

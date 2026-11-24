@@ -1,0 +1,3 @@
+,IQR_Lower,IQR_Upper,IQR_Count,Z_Threshold,Z_Count,Overlap_Count,IQR_Only_Count,Z_Only_Count
+GrLivArea,158.625,2747.625,31.0,3.0,16.0,16.0,15.0,0.0
+SalePrice,3937.5,340037.5,61.0,3.0,22.0,22.0,39.0,0.0
